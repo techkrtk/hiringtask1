@@ -52,7 +52,7 @@ app.post('/create', (req, res) => {
       });
   });
  
-  //TO reset their password the API accepts email and the new password in the form of JSON.
+  //To reset their password the API accepts email and the new password in the form of JSON.
   app.post('/forgetandreset', (req, res) => {
     let login = new Login({
         email:req.body.email,
@@ -70,4 +70,5 @@ app.post('/create', (req, res) => {
   app.listen(port, () => {
     console.log(`Started up at port ${port}`);
   });
+  
   
